@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @layer utilities {
+        .ball-spin {
+          width: 20px;
+          height: 20px;
+          background: radial-gradient(circle, #1ad598 0 50%, #ffff 60% 0);
+          position: absolute;
+          top: 57px;
+          left: 35px;
+          border-radius: 50%;
+        }
+        .card-ball {
+          background: radial-gradient(circle, #ffffff 120px, #f1f4f9 0);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-[#F9FBFC] text-[#17181A]">
+    <header class="px-4 flex justify-around w-full h-[95px] overflow-y-hidden">
+      <div class="flex items-center">
+        <img src="/assets/header_nav.png" alt="header navbar image" />
+        <h1 class="pl-2 font-semibold">SupaLab</h1>
+      </div>
+      <nav class="flex items-center justify-between w-[68%] ml-16">
+        <ul
+          class="flex gap-10 items-center text-sm text-slate-400 font-semibold"
+        >
+          <li class="bg-[#12adf049] text-[#12AFF0] px-2 py-1 rounded-md">
+            Home
+          </li>
+          <li>Aircraft</li>
+          <li>Airlines</li>
+          <li>Routes</li>
+          <li>Flight</li>
+          <li>Database</li>
+          <li>Compare</li>
+          <li>Logbook</li>
+        </ul>
+        <img src="/assets/header_nav_icon_button.png" alt="" class="mr-8" />
+      </nav>
+      <div class="flex items-center relative">
+        <span
+          class="mr-4 bg-[#12adf049] w-[50px] h-[50px] rounded-full flex items-center justify-center text-[#12AFF0] font-semibold"
+        >
+          BR
+          <span class="ball-spin"></span>
+        </span>
+        <div class="flex items-center justify-around">
+          <div>
+            <h1 class="font-semibold">Boris R.</h1>
+            <p class="text-slate-400">Professional</p>
+          </div>
+        </div>
+        <img class="ml-4" src="assets/header_nav_arrows.png" alt="" />
+      </div>
+    </header>
+    <section class="bg-[#F9FBFC] w-full h-[800px] mb-[24%]">
+      <div
+        class="bg-[url('/assets/hero_image.png')] w-full h-[800px] bg-cover bg-center relative"
+      >
+        <div class="absolute w-full h-full">
+          <div class="flex items-center justify-end mr-4 mt-6">
+            <ul
+              class="relative flex items-center gap-4 bg-[#F1F4F9] px-4 py-2 rounded-md mr-4 text-[12px] text-slate-400"
+            >
+              <li class="text-slate-700">
+                12 Months
+                <span
+                  class="absolute w-[2px] h-full bg-slate-200 right-1-2 top-0 left-[83px]"
+                ></span>
+              </li>
+              <li>
+                30 Days
+                <span
+                  class="absolute w-[2px] h-full bg-slate-200 right-1-2 top-0 left-[145px]"
+                ></span>
+              </li>
+              <li>
+                7 Days
+                <span
+                  class="absolute w-[2px] h-full bg-slate-200 right-1-2 top-0 left-[198px]"
+                ></span>
+              </li>
+              <li>24 Hours</li>
+            </ul>
+            <div
+              class="flex items-center gap-4 bg-[#F1F4F9] px-4 py-2 rounded-md mr-2 text-[12px] text-slate-400"
+            >
+              <img
+                src="/assets/button_icon/white_border_light/cal.png"
+                alt=""
+              />
+              <p class="text-slate-900 font-semibold">Select Dates</p>
+            </div>
+            <div
+              class="flex items-center gap-4 bg-[#F1F4F9] px-4 py-2 rounded-md mr-2 text-[12px] text-slate-400"
+            >
+              <img
+                src="/assets/button_icon/button_icon/white_border_light/filter.png"
+                alt=""
+              />
+              <p class="text-slate-900 font-semibold">Filter</p>
+            </div>
+          </div>
+          <div class="absolute top-[200px] left-[30%] flex items-center gap-4">
+            <p
+              class="w-full bg-[#F1F4F9] px-4 py-4 rounded-full font-bold text-3xl pl-12"
+            >
+              Search Aircraft, Airline or Flight
+            </p>
+            <div class="w-40 ml-2 relative">
+              <img
+                src="/assets/button_icon/button_icon/white_border_light/svg.png"
+                alt=""
+                class="absolute top-6 left-4"
+              />
+              <input
+                type="text"
+                class="w-full h-full rounded-md py-6 pl-12 placeholder:text-slate-700"
+                placeholder="Search"
+              />
+            </div>
+          </div>
+          <div
+            class="absolute flex items-center -bottom-80 w-full justify-evenly"
+          >
+            <div
+              class="w-[350px] h-[419px] flex flex-col bg-white rounded-lg relative"
+            >
+              <div class="flex items-center justify-around w-full h-24">
+                <h2 class="font-bold text-lg">Aircraft</h2>
+                <img src="/assets/more.png" alt="this is dot logo of more" />
+              </div>
+              <div class="relative">
+                <div class="w-full h-[148px] overflow-hidden relative">
+                  <div
+                    class="w-[283px] h-[283px] border card-ball mx-auto rounded-full"
+                  ></div>
+
+                  <div class="absolute top-20 left-[115px]">
+                    <div class="text-4xl font-semibold">18,000</div>
+                    <p class="text-slate-400 pl-8 pt-2">Aircraft</p>
+                  </div>
+                </div>
+                <img
+                  src="/assets/blue.png"
+                  alt="blue cure image"
+                  class="absolute top-[0px] left-[124px]"
+                />
+                <img
+                  src="/assets/yellow.png"
+                  alt="blue cure image"
+                  class="absolute top-[89px] left-[288px]"
+                />
+                <img
+                  src="/assets/purple.png"
+                  alt="blue cure image"
+                  class="absolute top-[20px] left-[33px]"
+                />
+                <div
+                  class="w-full flex mt-10 px-8 items-center justify-between"
+                >
+                  <div
+                    class="flex items-center bg-purple-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-purple-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">Member Sales</h1>
+                  </div>
+                  <div
+                    class="flex items-center bg-blue-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-blue-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">New Orders</h1>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-slate-100 w-min m-auto mt-4 px-2 py-1 rounded-md"
+                >
+                  <span
+                    class="w-[12px] h-[12px] rounded-full bg-yellow-400 mr-2"
+                  ></span>
+                  <h1 class="text-slate-400">Completed</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[350px] h-[419px] flex flex-col bg-white rounded-lg relative"
+            >
+              <div class="flex items-center justify-around w-full h-24">
+                <h2 class="font-bold text-lg">To Time Performance</h2>
+                <img src="/assets/more.png" alt="this is dot logo of more" />
+              </div>
+              <div class="relative">
+                <div class="w-full h-[148px] overflow-hidden relative">
+                  <div
+                    class="w-[283px] h-[283px] border card-ball mx-auto rounded-full"
+                  ></div>
+
+                  <div class="absolute top-20 left-[120px]">
+                    <div class="text-4xl font-semibold pl-2">5,320</div>
+                    <p class="text-slate-400 pl-4 pt-2">Departures</p>
+                  </div>
+                </div>
+                <img
+                  src="/assets/blue.png"
+                  alt="blue cure image"
+                  class="absolute top-[0px] left-[124px]"
+                />
+                <img
+                  src="/assets/yellow.png"
+                  alt="blue cure image"
+                  class="absolute top-[89px] left-[288px]"
+                />
+                <img
+                  src="/assets/purple.png"
+                  alt="blue cure image"
+                  class="absolute top-[20px] left-[33px]"
+                />
+                <div
+                  class="w-full flex mt-10 px-8 items-center justify-between"
+                >
+                  <div
+                    class="flex items-center bg-purple-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-purple-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">On Time</h1>
+                  </div>
+                  <div
+                    class="flex items-center bg-blue-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-blue-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">Delayed</h1>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-slate-100 w-min m-auto mt-4 px-2 py-1 rounded-md"
+                >
+                  <span
+                    class="w-[12px] h-[12px] rounded-full bg-yellow-400 mr-2"
+                  ></span>
+                  <h1 class="text-slate-400">Cancelled</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[350px] h-[419px] flex flex-col bg-white rounded-lg relative"
+            >
+              <div class="flex items-center justify-around w-full h-24">
+                <h2 class="font-bold text-lg">Total Airlines</h2>
+                <img src="/assets/more.png" alt="this is dot logo of more" />
+              </div>
+              <div class="relative">
+                <div class="w-full h-[148px] overflow-hidden relative">
+                  <div
+                    class="w-[283px] h-[283px] border card-ball mx-auto rounded-full"
+                  ></div>
+                  <div class="absolute top-20 left-[120px]">
+                    <div class="text-4xl font-semibold pl-2">5,320</div>
+                    <p class="text-slate-400 pl-4 pt-2">Departures</p>
+                  </div>
+                </div>
+                <img
+                  src="/assets/blue.png"
+                  alt="blue cure image"
+                  class="absolute top-[0px] left-[124px]"
+                />
+                <img
+                  src="/assets/yellow.png"
+                  alt="blue cure image"
+                  class="absolute top-[89px] left-[288px]"
+                />
+                <img
+                  src="/assets/purple.png"
+                  alt="blue cure image"
+                  class="absolute top-[20px] left-[33px]"
+                />
+                <div
+                  class="w-full flex mt-10 px-8 items-center justify-between"
+                >
+                  <div
+                    class="flex items-center bg-purple-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-purple-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">Member Sales</h1>
+                  </div>
+                  <div
+                    class="flex items-center bg-blue-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-blue-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">New Orders</h1>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-slate-100 w-min m-auto mt-4 px-2 py-1 rounded-md"
+                >
+                  <span
+                    class="w-[12px] h-[12px] rounded-full bg-yellow-400 mr-2"
+                  ></span>
+                  <h1 class="text-slate-400">Completed</h1>
+                </div>
+              </div>
+            </div>
+            <div
+              class="w-[350px] h-[419px] flex flex-col bg-white rounded-lg relative"
+            >
+              <div class="flex items-center justify-around w-full h-24">
+                <h2 class="font-bold text-lg">CO2 Emissions</h2>
+                <img src="/assets/more.png" alt="this is dot logo of more" />
+              </div>
+              <div class="relative">
+                <div class="w-full h-[148px] overflow-hidden relative">
+                  <div
+                    class="w-[283px] h-[283px] border card-ball mx-auto rounded-full"
+                  ></div>
+
+                  <div class="absolute top-20 left-[115px]">
+                    <div class="text-4xl font-semibold pl-4">5,320</div>
+                    <p class="text-slate-400 pl-6 pt-2">Departures</p>
+                  </div>
+                </div>
+                <img
+                  src="/assets/blue.png"
+                  alt="blue cure image"
+                  class="absolute top-[0px] left-[124px]"
+                />
+                <img
+                  src="/assets/yellow.png"
+                  alt="blue cure image"
+                  class="absolute top-[89px] left-[288px]"
+                />
+                <img
+                  src="/assets/purple.png"
+                  alt="blue cure image"
+                  class="absolute top-[20px] left-[33px]"
+                />
+                <div
+                  class="w-full flex mt-10 px-8 items-center justify-between"
+                >
+                  <div
+                    class="flex items-center bg-purple-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-purple-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">Member Sales</h1>
+                  </div>
+                  <div
+                    class="flex items-center bg-blue-50 px-2 py-1 rounded-md"
+                  >
+                    <span
+                      class="w-[12px] h-[12px] rounded-full bg-blue-400 mr-2"
+                    ></span>
+                    <h1 class="text-slate-400">New Orders</h1>
+                  </div>
+                </div>
+                <div
+                  class="flex items-center bg-slate-100 w-min m-auto mt-4 px-2 py-1 rounded-md"
+                >
+                  <span
+                    class="w-[12px] h-[12px] rounded-full bg-yellow-400 mr-2"
+                  ></span>
+                  <h1 class="text-slate-400">Completed</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="bg-[#F9FBFC] w-full h-[400px] mx-auto">
+      <div class="flex items-center w-full gap-4 ml-[100px]">
+        <div class="w-[550px] h-[190px] flex flex-col bg-white rounded-lg">
+          <div class="flex items-center justify-between mx-8 my-6">
+            <h2 class="text-slate-400 font-semibold">Total Flights</h2>
+            <img src="assets/more.png" alt="" />
+          </div>
+          <div class="flex items-center justify-between mx-8 pb-6">
+            <div class="flex flex-col items-stretch gap-2">
+              <p class="text-4xl font-bold">75,030</p>
+              <div
+                class="flex items-center gap-2 bg-slate-100 px-2 py-1 rounded-md"
+              >
+                <img src="assets/icon-2.png" alt="" />
+                <span class="text-green-400 text-sm font-bold"
+                  >+12,7%
+                  <span class="text-slate-400 text-sm"
+                    >vs.last month</span
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="pb-2">
+              <img src="assets/graph_card_one.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="w-[550px] h-[190px] flex flex-col bg-white rounded-lg">
+          <div class="flex items-center justify-between mx-8 my-6">
+            <h2 class="text-slate-400 font-semibold">Flight Hours</h2>
+            <img src="assets/more.png" alt="" />
+          </div>
+          <div class="flex items-center justify-between mx-8 pb-6">
+            <div class="flex flex-col items-stretch gap-2">
+              <p class="text-4xl font-bold">93,000</p>
+              <div
+                class="flex items-center gap-2 bg-slate-100 px-2 py-1 rounded-md"
+              >
+                <img src="assets/icon-2_red.png" alt="" />
+                <span class="text-red-400 text-sm font-bold"
+                  >-14,5%
+                  <span class="text-slate-400 text-sm"
+                    >vs.last month</span
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="pb-2">
+              <img src="assets/graph-3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="w-[550px] h-[190px] flex flex-col bg-white rounded-lg">
+          <div class="flex items-center justify-between mx-8 my-6">
+            <h2 class="text-slate-400 font-semibold">Distance Flown</h2>
+            <img src="assets/more.png" alt="" />
+          </div>
+          <div class="flex items-center justify-between mx-8 pb-6">
+            <div class="flex flex-col items-stretch gap-2">
+              <p class="text-4xl font-bold">93,000</p>
+              <div
+                class="flex items-center gap-2 bg-slate-100 px-2 py-1 rounded-md"
+              >
+                <img src="assets/icon-2.png" alt="" />
+                <span class="text-green-400 text-sm font-bold"
+                  >+12,7%
+                  <span class="text-slate-400 text-sm"
+                    >vs.last month</span
+                  ></span
+                >
+              </div>
+            </div>
+            <div class="pb-2">
+              <img src="assets/graph_card_one.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
